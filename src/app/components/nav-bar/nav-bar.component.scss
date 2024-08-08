@@ -1,0 +1,28 @@
+@import '../../../styles.scss';
+
+#nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem;
+    width: 100%;
+    background-color: $dark-color;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    h1{
+        font-size: 44px;
+        color: $pale-blue;
+    }
+    svg{
+        width: 5rem; 
+    }
+}
+
+.logo{
+
+}
