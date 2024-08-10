@@ -2,8 +2,8 @@
 
 #feature-block {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat($grid-column-size, 1fr);
+  gap: $grid-gap;
   width: 1200px;
   font-size: 16px;
   transition: all 1s ease-in-out;
@@ -54,10 +54,17 @@
   }
 
   // La partie avec les 3 hints !
-
+  .hint-container {
+    display: flex;
+    align-self: self-end;
+    align-items: flex-start;
+    height: fit-content;
+    gap: 24px;
+    grid-column: 7 / 13;
+  }
   app-feature-hint {
     grid-column: span 2;
-    grid-row: 1;
+    width: 100%;
   }
 }
 
@@ -79,62 +86,64 @@
   gap: 0.5rem;
 }
 
-@media screen and (max-width: 1250px) and (min-width: 850px) {
+@media screen and (max-width: 1250px) {
   #feature-block {
     img {
       width: 100%;
     }
     width: auto;
-    
-    margin: 0 24px;
-    background: rgba(255, 0, 0, 0.178);
+    margin: 0 2rem;
+    // background: rgba(255, 0, 0, 0.178);
   }
 }
 
-@media screen and (max-width: 849px) and (min-width: 650px) {
+@media screen and (max-width: 849px) {
   #feature-block {
-    width: auto;
-    img {
-      width: 100%;
-    }
-
-    .feature-content{
+    .feature-content {
       grid-column: 1 / 13;
     }
-
-    app-feature-hint {
-      grid-column: span 4;
+    .hint-container {
       grid-row: 4;
+      grid-column: auto / span 12;
     }
+    // app-feature-hint {
+    //   grid-column: span 4;
+    //   grid-row: 4;
+    // }
 
-
-
-    margin: 0 24px;
-    background: rgba(135, 60, 185, 0.219);
+    // background: rgba(135, 60, 185, 0.219);
   }
 }
 
 @media screen and (max-width: 649px) {
   #feature-block {
-    width: auto;
     img {
       width: 100%;
     }
-    .feature-content{
+    .feature-content {
       grid-column: 1 / 13;
     }
-    
-    .replace-container{
+    .hint-container {
+      grid-row: 3;
+    }
+    .replace-container {
       grid-row: 4;
     }
 
-    app-feature-hint {
-      grid-column: span 4;
-      grid-row: 3;
-    }
-    
+    // margin: 0 16px;
+    // background: rgba(60, 114, 185, 0.212);
+  }
+}
 
-    margin: 0 16px;
-    background: rgba(60, 114, 185, 0.212);
+@media screen and (max-width: 600px) {
+  #feature-block {
+    .feature-content {
+      h2 {
+        font-size: 36px;
+      }
+    }
+    .hint-container {
+      flex-direction: column;
+    }
   }
 }

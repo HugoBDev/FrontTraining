@@ -10,8 +10,26 @@ $font-family-sans: "Inter", sans-serif;
   font-weight: 500;
 }
 
-section{
+section {
   max-width: 1200px;
 }
 
+.fill-button,
+.stroke-button {
+  padding: 10px 20px 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
 
+.fill-button {
+  color: $color-base-100;
+  background: $color-button-primary;
+}
+
+.stroke-button {
+  color: $color-button-secondary-text;
+  background: $color-button-secondary;
+}

@@ -5,12 +5,14 @@
     <p>{{ featureBlock.content }}</p>
     <a [href]="featureBlock.hrefLink">{{ featureBlock.linkText }}</a>
   </div>
-
+  
+  <div class="hint-container">
     @for(featureHint of featureBlock.featureHints ; track featureHint){
     <app-feature-hint [featureHint]="featureHint"></app-feature-hint>
     }
+  </div>
 
-  <img src="{{ featureBlock.imgUrl }}" alt="" />
+  <img #featureImg src="{{ featureBlock.imgUrl }}" alt="" />
   <div class="replace-container">
     @if(featureBlock.replaces){
     <span>Replaces</span>
