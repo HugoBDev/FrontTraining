@@ -16,15 +16,163 @@ import { HeroComponent } from './components/hero/hero.component';
     NavBarComponent,
     FeatureHintComponent,
     FeatureBlockComponent,
-    HeroComponent
+    HeroComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  /**
-   *  🗃️ Simple Feature block data : AI
-   */
+  writeFeatureBlock: FeatureBlock = {
+    title: 'Find the right words.',
+    content:
+      'Capture ideas, gather feedback from teammates, and ask AI to add the finishing touches.',
+    hrefLink: 'http://#',
+    imgUrl:
+      'https://www.notion.so/front-static/pages/product/super-duper/write-v5.png',
+    resizedImgUrl:
+      'https://www.notion.so/front-static/pages/product/super-duper/mobile/write.png',
+    linkText: 'Explore docs & notes',
+    tag: ' Write',
+    featureHints: [
+      {
+        imgUrl:
+          'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/illustrated-icons/photoOnRectangle.png',
+        title: 'Building blocks',
+        content: '100+ content types to communicate any idea.',
+      },
+      {
+        imgUrl:
+          'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/illustrated-icons/at2.png',
+        title: 'Collaborative tools',
+        content: 'Built for teams to share, suggest, and comment.',
+      },
+      {
+        imgUrl:
+          'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/illustrated-icons/sparklePencil.png',
+        title: 'AI-assisted',
+        content: 'Edit, draft, translate. Ask, and AI will answer.',
+      },
+    ],
+    replaces: [
+      {
+        imgUrl:
+          'https://www.notion.so/front-static/pages/product/super-duper/tools/evernote.svg',
+        name: 'Evernote',
+      },
+      {
+        imgUrl:
+          'https://www.notion.so/front-static/pages/product/super-duper/tools/gdocs.svg',
+        name: 'Google Docs',
+      },
+      {
+        imgUrl:
+          'https://www.notion.so/front-static/pages/product/super-duper/tools/coda.svg',
+        name: 'Coda',
+      },
+    ],
+  };
+
+  planFeatureBlock: FeatureBlock = {
+    title: 'Your workflow. Your way.',
+    content:
+      'There’s a lot to keep track of. Notion’s flexible pages allow you to design your ideal workflow and view it by timeline, task, team, or level of doneness.',
+    hrefLink: 'http://#',
+    imgUrl:
+      'https://www.notion.so/front-static/pages/product/super-duper/plan-v5.png',
+    resizedImgUrl:
+      'https://www.notion.so/front-static/pages/product/super-duper/mobile/plan.png',
+    linkText: 'Explore projects',
+    tag: ' Plan',
+    featureHints: [
+      {
+        imgUrl:
+          'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/illustrated-icons/checklist.png',
+        title: 'Tasks and to-dos',
+        content: 'Tackle any project, big or small.',
+      },
+      {
+        imgUrl:
+          'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/illustrated-icons/calendarSheet.png',
+        title: 'Custom views',
+        content:
+          'Visualize work in any format, from calendars to kanban boards.',
+      },
+      {
+        imgUrl:
+          'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/illustrated-icons/bolt.png',
+        title: 'Automations',
+        content: 'Put tedious tasks on autopilot.',
+      },
+    ],
+    replaces: [
+      {
+        imgUrl:
+          'https://www.notion.so/front-static/pages/product/super-duper/tools/trello.svg',
+        name: 'Trello',
+      },
+      {
+        imgUrl:
+          'https://www.notion.so/front-static/pages/product/super-duper/tools/asana.svg',
+        name: 'Asana',
+      },
+      {
+        imgUrl:
+          'https://www.notion.so/front-static/pages/product/super-duper/tools/monday.svg',
+        name: 'Monday',
+      },
+    ],
+  };
+
+  organizeFeatureBlock: FeatureBlock = {
+    title: 'Remember everything.',
+    content:
+      'No more endless searching for the info you need. Everything you and your team store in Notion is accessible in an instant.',
+    hrefLink: 'http://#',
+    imgUrl:
+      'https://www.notion.so/front-static/pages/product/super-duper/organize-v6.png',
+    resizedImgUrl:
+      'https://www.notion.so/front-static/pages/product/super-duper/mobile/organize.png',
+    linkText: 'Explore knowledge management',
+    tag: ' Organize',
+    featureHints: [
+      {
+        imgUrl:
+          'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/illustrated-icons/bookClosed1.png',
+        title: 'Teamspaces',
+        content: 'Dedicated space for every team and project.',
+      },
+      {
+        imgUrl:
+          'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/illustrated-icons/connections.png',
+        title: 'Integrations',
+        content: 'Connected to all your favorite tools.',
+      },
+      {
+        imgUrl:
+          'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/illustrated-icons/sparkleBubble.png',
+        title: 'Just ask AI',
+        content: 'Instant answers when you need them.',
+      },
+    ],
+    replaces: [
+      {
+        imgUrl:
+          'https://www.notion.so/cdn-cgi/image/format=webp,width=32/front-static/pages/product/super-duper/tools/confluence.png',
+        name: 'Confluence',
+      },
+      {
+        imgUrl:
+          'https://www.notion.so/cdn-cgi/image/format=webp,width=32/front-static/pages/product/super-duper/tools/sharepoint.png',
+        name: 'SharePoint',
+      },
+      {
+        imgUrl:
+          'https://www.notion.so/front-static/pages/product/super-duper/tools/google-drive.svg',
+        name: 'Gooogle Drive',
+      },
+    ],
+  };
+
   iaFeatureBlock: FeatureBlock = {
     title: 'Get a brain boost.',
     content:
