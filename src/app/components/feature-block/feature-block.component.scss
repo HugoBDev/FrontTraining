@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat($grid-column-size, 1fr);
   gap: $grid-gap;
-  width: 1200px;
+  width: 1290px;
   font-size: 16px;
   transition: all 1s ease-in-out;
 
@@ -13,7 +13,7 @@
     grid-row: 2;
     border-radius: 20px;
     outline: 2px solid $outline-img-color;
-    width: 1200px;
+    width: 1290px;
   }
 
   // La partie avec le titre, le texte, le lien ...

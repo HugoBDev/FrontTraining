@@ -1,12 +1,19 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { FeatureHintComponent } from './components/feature-hint/feature-hint.component';
+import {
+  FeatureHint,
+  FeatureHintComponent,
+} from './components/feature-hint/feature-hint.component';
 import {
   FeatureBlock,
   FeatureBlockComponent,
 } from './components/feature-block/feature-block.component';
 import { HeroComponent } from './components/hero/hero.component';
+import {
+  featureSmContainer,
+  FeatureSmContainerComponent,
+} from './components/feature-sm-container/feature-sm-container.component';
 
 @Component({
   selector: 'app-root',
@@ -17,12 +24,12 @@ import { HeroComponent } from './components/hero/hero.component';
     FeatureHintComponent,
     FeatureBlockComponent,
     HeroComponent,
+    FeatureSmContainerComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  
   writeFeatureBlock: FeatureBlock = {
     title: 'Find the right words.',
     content:
@@ -73,7 +80,6 @@ export class AppComponent {
     ],
   };
 
-  
   planFeatureBlock: FeatureBlock = {
     title: 'Your workflow. Your way.',
     content:
@@ -204,6 +210,60 @@ export class AppComponent {
           'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/illustrated-icons/puzzle.png',
         title: 'AI connectors',
         content: 'Access info from all your tools, right inside Notion.',
+      },
+    ],
+  };
+
+  featureSmContainerContent: featureSmContainer = {
+    title: 'Everything you need to do your best work.',
+    featureHints: [
+      {
+        imgUrl:
+          'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/illustrated-icons/docsStacked.png',
+        title: 'Docs',
+        content: 'Build any page, communicate any idea.',
+      },
+      {
+        imgUrl:
+          'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/illustrated-icons/bookFlat.png',
+        title: 'Wiki',
+        content: 'Store all your knowledge in one home base.',
+      },
+      {
+        imgUrl:
+          'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/illustrated-icons/target.png',
+        title: 'Projects',
+        content: 'Manage any endeavor from beginning to end.',
+      },
+      {
+        imgUrl:
+          'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/illustrated-icons/sparkle.png',
+        title: 'Notion AI',
+        content: 'Instant answers and writing help within your workspace.',
+      },
+      {
+        imgUrl:
+          'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/illustrated-icons/notionCalendarLogo.png',
+        title: 'Calendar',
+        content: 'See all your commitments in one place.',
+      },
+      {
+        imgUrl:
+          'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/illustrated-icons/trophy.png',
+        title: 'Goals',
+        content: 'Set objectives, get organized, and track progress.',
+      },
+      {
+        imgUrl:
+          'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/illustrated-icons/globe.png',
+        title: 'Sites',
+        content: 'Make any page a website in minutes.',
+      },
+      {
+        imgUrl:
+          'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/illustrated-icons/shapes1.png',
+        title: 'Templates',
+        content: 'Jump in with one of 10,000+ templates.',
       },
     ],
   };

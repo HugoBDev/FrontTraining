@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+
+#feature-sm-container {
+  display: flex;
+  flex-direction: column;
+  width: 1290px;
+  gap: 2rem;
+  .title {
+    font-weight: 700;
+    font-size: 61px;
+    width: 640px;
+  }
+  .feature-sm {
+    flex-wrap: wrap;
+
+    display: flex;
+    gap: 28px;
+    app-feature-sm{
+      flex-grow: 1;
+      flex-basis: 296px;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 1500px) {
+  #feature-sm-container {
+    margin: 0 2rem;
+    width: auto;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  #feature-sm-container {
+    .title {
+      width: auto;
+    }
+    .feature-sm {
+      width: auto;
+      app-feature-sm{
+        flex-basis: 150px;
+      }
+    }
+  }
+}
