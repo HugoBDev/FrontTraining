@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: column;
   font-size: 16px;
+  justify-content: flex-end;
+  
   img {
     max-width: 80px;
     margin-bottom: 12px;

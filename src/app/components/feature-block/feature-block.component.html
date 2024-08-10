@@ -1,0 +1,22 @@
+<section id="feature-block">
+  <div class="feature-content">
+    <div class="tag">{{ featureBlock.tag }}</div>
+    <h2>{{ featureBlock.title }}</h2>
+    <p>{{ featureBlock.content }}</p>
+    <a [href]="featureBlock.hrefLink">{{ featureBlock.linkText }}</a>
+  </div>
+
+    @for(featureHint of featureBlock.featureHints ; track featureHint){
+    <app-feature-hint [featureHint]="featureHint"></app-feature-hint>
+    }
+
+  <img src="{{ featureBlock.imgUrl }}" alt="" />
+  <div class="replace-container">
+    @if(featureBlock.replaces){
+    <span>Replaces</span>
+    } @for(replace of featureBlock.replaces ; track replace){
+    <img [src]="replace.imgUrl" alt="" />
+    <p>{{ replace.name }}</p>
+    }
+  </div>
+</section>
