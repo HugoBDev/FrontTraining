@@ -22,6 +22,7 @@ import { HeroComponent } from './components/hero/hero.component';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
+  
   writeFeatureBlock: FeatureBlock = {
     title: 'Find the right words.',
     content:
@@ -72,6 +73,7 @@ export class AppComponent {
     ],
   };
 
+  
   planFeatureBlock: FeatureBlock = {
     title: 'Your workflow. Your way.',
     content:
