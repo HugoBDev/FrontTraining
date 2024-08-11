@@ -15,6 +15,7 @@ import {
   FeatureSmContainerComponent,
 } from './components/feature-sm-container/feature-sm-container.component';
 import { LogoWallComponent } from './components/logo-wall/logo-wall.component';
+import { PinContent, PinnedComponent } from './components/pinned/pinned.component';
 
 @Component({
   selector: 'app-root',
@@ -26,7 +27,8 @@ import { LogoWallComponent } from './components/logo-wall/logo-wall.component';
     FeatureBlockComponent,
     HeroComponent,
     FeatureSmContainerComponent,
-    LogoWallComponent
+    LogoWallComponent,
+    PinnedComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -51,6 +53,11 @@ export class AppComponent {
     'https://images.ctfassets.net/spoqsaf9291f/6YyxUI0AtkIHmgiB8gRVJb/4cb6836b5db29aae9a514738bfc17a4c/spotify_3x.png',
     'https://images.ctfassets.net/spoqsaf9291f/1fJCIIjK31CRPMPj7Bp9Mu/c094fa31125ad5f8a01bb8169847e227/toyota.svg',
   ];
+
+  pinContent : PinContent = {
+    imgUrl: 'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/shared/logos/black/forbes.png',
+    quote: '“Your AI everything app.”',
+  }
 
   writeFeatureBlock: FeatureBlock = {
     title: 'Find the right words.',
