@@ -23,6 +23,10 @@ import {
   GetStartedComponent,
   GetStartedContent,
 } from './components/get-started/get-started.component';
+import {
+  FooterComponent,
+  FooterContent,
+} from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -37,6 +41,7 @@ import {
     LogoWallComponent,
     PinnedComponent,
     GetStartedComponent,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -311,4 +316,42 @@ export class AppComponent {
       },
     ],
   };
+
+  footerContents: FooterContent[] = [
+    {
+      title: 'Company',
+      sectionsContent: [
+        'About us',
+        'Careers',
+        'Security',
+        'Status',
+        'Terms & privacy',
+      ],
+    },
+    {
+      title: 'Download',
+      sectionsContent: [
+        'iOS & Android',
+        'Mac & Windows',
+        'Calendar',
+        'Web Clipper',
+      ],
+    },
+    {
+      title: 'Resources',
+      sectionsContent: [
+        'Help center',
+        'Pricing',
+        'Blog',
+        'Community',
+        'Integrations',
+        'Templates',
+        'Affiliates',
+      ],
+    },
+    {
+      title: 'Notion for',
+      sectionsContent: [' Enterprise', 'Small business', 'Personal'],
+    },
+  ];
 }
