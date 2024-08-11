@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   font-size: 16px;
+  gap: 0.5rem;
   img {
     max-width: 80px;
     margin-bottom: 12px;
@@ -14,22 +15,20 @@
   .content {
     color: $color-black-400;
   }
-
 }
 
 @media screen and (max-width: 600px) {
-  #feature-hint{
+  #feature-hint {
     display: grid;
     grid-template-columns: repeat(1, 50px 1fr);
     gap: 1rem;
-    img{
+    img {
       width: 50px;
       grid-column: 1;
     }
-    .hint-content{
-      grid-column: 2 ;
+    .hint-content {
+      grid-column: 2;
       grid-row: 1;
     }
   }
-  
 }

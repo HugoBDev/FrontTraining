@@ -5,7 +5,7 @@
     <p>{{ featureBlock.content }}</p>
     <a [href]="featureBlock.hrefLink">{{ featureBlock.linkText }}</a>
   </div>
-  
+
   <div class="hint-container">
     @for(featureHint of featureBlock.featureHints ; track featureHint){
     <app-feature-hint [featureHint]="featureHint"></app-feature-hint>

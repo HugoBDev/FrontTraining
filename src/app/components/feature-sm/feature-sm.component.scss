@@ -14,8 +14,8 @@
     font-weight: 700;
     display: flex;
 
-    &::after{
-      content: url('../../assets/move-right-dark.svg');
+    &::after {
+      content: url("../../assets/move-right-dark.svg");
       margin-left: 12px;
     }
   }
@@ -23,5 +23,3 @@
     color: $color-black-400;
   }
 }
-
-

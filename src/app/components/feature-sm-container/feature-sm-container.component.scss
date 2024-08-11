@@ -15,14 +15,12 @@
 
     display: flex;
     gap: 28px;
-    app-feature-sm{
+    app-feature-sm {
       flex-grow: 1;
       flex-basis: 296px;
     }
   }
 }
-
-
 
 @media screen and (max-width: 1500px) {
   #feature-sm-container {
@@ -39,7 +37,7 @@
     }
     .feature-sm {
       width: auto;
-      app-feature-sm{
+      app-feature-sm {
         flex-basis: 150px;
       }
     }

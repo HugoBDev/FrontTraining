@@ -13,7 +13,6 @@ export interface FeatureHint {
   templateUrl: './feature-hint.component.html',
   styleUrl: './feature-hint.component.scss',
 })
-
 export class FeatureHintComponent {
   @Input() featureHint!: FeatureHint;
 }

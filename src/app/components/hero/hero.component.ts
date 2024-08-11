@@ -1,5 +1,7 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
-
+export interfaceHeroContent{
+  
+}
 @Component({
   selector: 'app-hero',
   standalone: true,
@@ -12,6 +14,7 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 })
 export class HeroComponent {
   @ViewChild('footerImg') footerImg!: ElementRef<HTMLImageElement>;
+  @Input() heroContent
   pageWidth: number = window.innerWidth;
 
   ngOnInit(): void {

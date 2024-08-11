@@ -6,8 +6,8 @@ import { FeatureHint } from '../feature-hint/feature-hint.component';
   standalone: true,
   imports: [],
   templateUrl: './feature-sm.component.html',
-  styleUrl: './feature-sm.component.scss'
+  styleUrl: './feature-sm.component.scss',
 })
 export class FeatureSmComponent {
-@Input() featureSm!: FeatureHint
+  @Input() featureSm!: FeatureHint;
 }
