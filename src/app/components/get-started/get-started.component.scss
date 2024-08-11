@@ -1,0 +1,40 @@
+@import "../../styles/variables.scss";
+
+
+#get-started {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 16px;
+    width: 1290px;
+    h2{
+        font-weight: 700;
+        font-size: 64px;
+    }
+    p{
+        
+        color: $color-black-400;
+    }
+    .buttons-container{
+        display: flex;
+        gap: 1rem;
+    }
+}
+@media screen  and (max-width: 1300px) {
+    #get-started{
+       width: auto;
+        margin: 0 2rem;
+    }
+}
+@media screen  and (max-width: 650px) {
+    #get-started{
+        h2{
+            font-size: 52px;
+        }
+        .buttons-container{
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}

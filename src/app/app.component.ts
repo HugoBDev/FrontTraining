@@ -15,7 +15,14 @@ import {
   FeatureSmContainerComponent,
 } from './components/feature-sm-container/feature-sm-container.component';
 import { LogoWallComponent } from './components/logo-wall/logo-wall.component';
-import { PinContent, PinnedComponent } from './components/pinned/pinned.component';
+import {
+  PinContent,
+  PinnedComponent,
+} from './components/pinned/pinned.component';
+import {
+  GetStartedComponent,
+  GetStartedContent,
+} from './components/get-started/get-started.component';
 
 @Component({
   selector: 'app-root',
@@ -28,7 +35,8 @@ import { PinContent, PinnedComponent } from './components/pinned/pinned.componen
     HeroComponent,
     FeatureSmContainerComponent,
     LogoWallComponent,
-    PinnedComponent
+    PinnedComponent,
+    GetStartedComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -54,10 +62,17 @@ export class AppComponent {
     'https://images.ctfassets.net/spoqsaf9291f/1fJCIIjK31CRPMPj7Bp9Mu/c094fa31125ad5f8a01bb8169847e227/toyota.svg',
   ];
 
-  pinContent : PinContent = {
-    imgUrl: 'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/shared/logos/black/forbes.png',
+  pinContent: PinContent = {
+    imgUrl:
+      'https://www.notion.so/cdn-cgi/image/format=webp,width=96/front-static/shared/logos/black/forbes.png',
     quote: '“Your AI everything app.”',
-  }
+  };
+
+  getStartedContent: GetStartedContent = {
+    title: 'Get started for free.',
+    content: 'Play around with it first. Pay and add your team later.',
+    btnContent: ['Get Notion free', 'Request a demo'],
+  };
 
   writeFeatureBlock: FeatureBlock = {
     title: 'Find the right words.',
