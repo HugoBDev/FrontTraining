@@ -1,13 +1,15 @@
 <app-nav-bar [navBarContent]="navBarContent"></app-nav-bar>
 <body>
-  <app-hero></app-hero>
+  <app-hero [heroContent]="heroContent"></app-hero>
   <app-logo-wall [logoUrls]="logoUrls"></app-logo-wall>
   <app-feature-block [featureBlock]="writeFeatureBlock"></app-feature-block>
   <app-feature-block [featureBlock]="planFeatureBlock"></app-feature-block>
   <app-feature-block [featureBlock]="organizeFeatureBlock"></app-feature-block>
   <app-pinned [pinContent]="pinContent"></app-pinned>
   <app-feature-block [featureBlock]="iaFeatureBlock"></app-feature-block>
-  <app-feature-sm-container [featureSm]="featureSmContainerContent"></app-feature-sm-container>
+  <app-feature-sm-container
+    [featureSm]="featureSmContainerContent"
+  ></app-feature-sm-container>
   <app-get-started [getStartedContent]="getStartedContent"></app-get-started>
   <app-footer [footerContents]="footerContents"></app-footer>
 </body>

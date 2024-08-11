@@ -5,8 +5,8 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './logo-wall.component.html',
-  styleUrl: './logo-wall.component.scss'
+  styleUrl: './logo-wall.component.scss',
 })
 export class LogoWallComponent {
-@Input() logoUrls!: string[] 
+  @Input() logoUrls!: string[];
 }

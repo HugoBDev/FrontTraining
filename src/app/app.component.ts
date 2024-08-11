@@ -9,7 +9,7 @@ import {
   FeatureBlock,
   FeatureBlockComponent,
 } from './components/feature-block/feature-block.component';
-import { HeroComponent } from './components/hero/hero.component';
+import { HeroComponent, HeroContent } from './components/hero/hero.component';
 import {
   featureSmContainer,
   FeatureSmContainerComponent,
@@ -56,6 +56,14 @@ export class AppComponent {
       'Pricing',
     ],
     btnContent: ['Request a demo', 'Log in', 'Get Notion free'],
+  };
+
+  heroContent: HeroContent = {
+    title: 'Write. Plan. Organize.',
+    content: 'With a little help from AI',
+    btnContent: ['Get Notion free', 'Request a demo'],
+    imgUrl:
+      'https://www.notion.so/cdn-cgi/image/format=webp,width=1080/front-static/pages/product/super-duper/hero-illo.png',
   };
 
   logoUrls: string[] = [
