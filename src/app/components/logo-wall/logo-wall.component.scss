@@ -1,0 +1,34 @@
+#logo-wall {
+  display: flex;
+  height: 37px;
+  gap: 6.5rem;
+  justify-content: space-between;
+  img {
+    max-width: 120px;
+    max-height: 40px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #logo-wall {
+    width: auto;
+    height: auto;
+    margin: 0 2rem;
+    flex-wrap: nowrap;
+    gap: 5rem;
+    img {
+      max-width: 80px;
+      max-height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 970px) {
+  #logo-wall {
+    flex-wrap: wrap;
+    justify-content: center;
+    // img {
+    //   flex-grow: 1;
+    // }
+  }
+}

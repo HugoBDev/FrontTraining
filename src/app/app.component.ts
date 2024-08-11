@@ -14,6 +14,7 @@ import {
   featureSmContainer,
   FeatureSmContainerComponent,
 } from './components/feature-sm-container/feature-sm-container.component';
+import { LogoWallComponent } from './components/logo-wall/logo-wall.component';
 
 @Component({
   selector: 'app-root',
@@ -25,6 +26,7 @@ import {
     FeatureBlockComponent,
     HeroComponent,
     FeatureSmContainerComponent,
+    LogoWallComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -40,6 +42,15 @@ export class AppComponent {
     ],
     btnContent: ['Request a demo', 'Log in', 'Get Notion free'],
   };
+
+  logoUrls: string[] = [
+    'https://images.ctfassets.net/spoqsaf9291f/6T4QxYfpIzIbZgWUSa5Rb1/c88459cc628f176493f115900cfbe5c0/figma.svg',
+    'https://images.ctfassets.net/spoqsaf9291f/GcGQkjJATOyaJRTvul2nK/3ad21f3637815fde848c61e6e7cfb1cc/substack.png',
+    'https://images.ctfassets.net/spoqsaf9291f/27ImnwWYAZNrl4pE44azZJ/ad710b3b96e67d3b19eb4012c0aeaed2/discord.svg  ',
+    'https://images.ctfassets.net/spoqsaf9291f/1MsSLQFZEc53mD2sFhdz44/78d002d81f91e7aab5322eb582f30190/arc.svg',
+    'https://images.ctfassets.net/spoqsaf9291f/6YyxUI0AtkIHmgiB8gRVJb/4cb6836b5db29aae9a514738bfc17a4c/spotify_3x.png',
+    'https://images.ctfassets.net/spoqsaf9291f/1fJCIIjK31CRPMPj7Bp9Mu/c094fa31125ad5f8a01bb8169847e227/toyota.svg',
+  ];
 
   writeFeatureBlock: FeatureBlock = {
     title: 'Find the right words.',
