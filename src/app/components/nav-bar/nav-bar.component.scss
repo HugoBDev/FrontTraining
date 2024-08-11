@@ -1,3 +1,86 @@
-#nav-bar{
-  
+@import "../../styles/variables.scss";
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 1rem;
+  font-size: 16px;
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    svg {
+      width: 100px;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      padding: 0.15rem 0.5rem;
+      border-radius: 10px;
+      cursor: pointer;
+      &::after {
+        content: url("../../assets/chevron-down.svg");
+        margin-top: 3px;
+      }
+      &:hover {
+        background: $color-black-150;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    gap: 0.5rem;
+    .sm-button {
+      cursor: pointer;
+      &:hover {
+        background: $color-black-150;
+      }
+      &:nth-last-child(1) {
+        background: $color-black-800;
+        color: $color-base-100;
+        &:hover {
+          background: $color-black-850;
+        }
+      }
+      &:nth-child(1) {
+        &::after {
+          content: "";
+          height: 20px;
+          width: 1px;
+          background: $color-black-200;
+          margin-left: 15px;
+          position: absolute;
+        }
+      }
+    }
+  }
+
+}
+.burger-menu {
+  position: absolute;
+  right: 10px;
+  display: none;
+  img {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  #nav-bar {
+    .left,
+    .right {
+      div,
+      button {
+        display: none;
+      }
+    }
+
+    .burger-menu {
+      display: block;
+    }
+  }
 }

@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+export interface NavBarContent {
+  sectionsContent : string[]
+  btnContent : string[]
+}
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,5 +13,5 @@ import { Component } from '@angular/core';
   styleUrl: './nav-bar.component.scss'
 })
 export class NavBarComponent {
-
+@Input() navBarContent !: NavBarContent
 }

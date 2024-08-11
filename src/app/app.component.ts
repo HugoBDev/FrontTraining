@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import {
-  FeatureHint,
-  FeatureHintComponent,
-} from './components/feature-hint/feature-hint.component';
+  NavBarComponent,
+  NavBarContent,
+} from './components/nav-bar/nav-bar.component';
+import { FeatureHintComponent } from './components/feature-hint/feature-hint.component';
 import {
   FeatureBlock,
   FeatureBlockComponent,
@@ -30,6 +30,17 @@ import {
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
+  navBarContent: NavBarContent = {
+    sectionsContent: [
+      'Product',
+      'Download',
+      'Solutions',
+      'Resources',
+      'Pricing',
+    ],
+    btnContent: ['Request a demo', 'Log in', 'Get Notion free'],
+  };
+
   writeFeatureBlock: FeatureBlock = {
     title: 'Find the right words.',
     content:
