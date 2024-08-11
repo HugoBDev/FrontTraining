@@ -1,27 +1,41 @@
 # FrontTraining
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
+🚀 Bienvenue dans mon labo secret de Front-End !
 
-## Development server
+Salut à toi, aventurier du web ! Tu viens de tomber sur mon projet top secret (enfin, plus maintenant) nommé FrontTraining. C'est ici que je m'entraîne à devenir le maître Jedi du HTML et du SCSS.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# 🎯 Objectif de la mission
 
-## Code scaffolding
+L'objectif est simple : reproduire la page d'accueil de Notion, ce site que j'aime tant et qui me fait rêver la nuit. Pourquoi ? Parce que c'est cool, c'est beau, et ça me permet de montrer que je peux faire des trucs aussi stylés (ou presque).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# 🛠 Technologies utilisées
 
-## Build
+HTML : Pour structurer la page comme un pro
+SCSS : Parce que le CSS c'est bien, mais le SCSS c'est mieux
+Beaucoup de café : Pour coder jusqu'à pas d'heure
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+🏗 Structure du projet
+CopyFrontTraining/
+│
+├── index.html
+├── styles/
+│ └── main.scss
+├── images/
+│ └── (plein d'images cool)
+└── README.md (vous êtes ici !)
+🚦 Comment utiliser ce projet
 
-## Running unit tests
+Clonez ce repo (si vous y arrivez, c'est déjà un bon début)
+Ouvrez index.html dans votre navigateur
+Admirez mon travail (ou riez, c'est selon)
+Inspirez-vous, mais ne copiez pas (ce serait pas cool)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# 📣 Disclaimer
 
-## Running end-to-end tests
+Ce projet est un exercice d'entraînement. Je ne prétends pas être affilié à Notion, ni posséder leurs designs. C'est juste moi qui m'amuse à reproduire des trucs cools pour apprendre.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# 🎉 Conclusion
 
-## Further help
+Si ce projet vous a fait sourire ou vous a donné envie de coder, alors ma mission est accomplie. N'hésitez pas à star ce repo (ça fera plaisir à mon ego) et bonne journée à vous !
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Fait avec ❤️ et beaucoup de détermination par [Votre Nom]
